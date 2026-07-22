@@ -1,10 +1,16 @@
 import tensorflow as tf
 
+print("Loading model...")
+
 model = tf.keras.models.load_model(
     "gender_model.keras",
     compile=False
 )
 
-model.save("gender_model_fixed.keras")
+print("Saving model...")
 
-print("Berhasil convert")
+model.save(
+    "gender_model.h5"
+)
+
+print("Selesai!")

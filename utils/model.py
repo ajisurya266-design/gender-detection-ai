@@ -6,7 +6,7 @@ import cv2
 # Load Model (sekali saja)
 # ===============================
 model = tf.keras.models.load_model(
-    "gender_model_fixed.keras",
+    "gender_model.h5",
     compile=False
 )
 
