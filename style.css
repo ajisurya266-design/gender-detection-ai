@@ -1,0 +1,121 @@
+/* =========================================
+   FONT
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+html, body, [class*="css"]{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =========================================
+   BACKGROUND
+========================================= */
+.stApp{
+    background:#0f0f0f;
+}
+
+/* =========================================
+   JUDUL
+========================================= */
+.title{
+    text-align:center;
+    font-size:42px;
+    font-weight:700;
+    color:white;
+}
+
+.subtitle{
+    text-align:center;
+    color:#bbbbbb;
+    margin-bottom:30px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+.card{
+
+    background:#1b1b1b;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    border:1px solid #2f2f2f;
+
+    box-shadow:0px 0px 15px rgba(255,0,0,.15);
+
+    margin-bottom:15px;
+}
+
+/* =========================================
+   METRIC
+========================================= */
+[data-testid="stMetric"]{
+
+    background:#1a1a1a;
+
+    border-radius:15px;
+
+    padding:15px;
+
+    border:1px solid #333;
+}
+
+/* =========================================
+   SIDEBAR
+========================================= */
+section[data-testid="stSidebar"]{
+
+    background:#141414;
+
+    border-right:1px solid #2b2b2b;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+.stButton>button{
+
+    width:100%;
+
+    background:#ff2d2d;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    padding:10px;
+}
+
+.stButton>button:hover{
+
+    background:#ff5555;
+}
+
+/* =========================================
+   PROGRESS BAR
+========================================= */
+.stProgress>div>div{
+
+    background:#ff2d2d;
+}
+
+/* =========================================
+   HIDE
+========================================= */
+footer{
+    visibility:hidden;
+}
+
+#MainMenu{
+    visibility:hidden;
+}
+
+header{
+    visibility:hidden;
+}
