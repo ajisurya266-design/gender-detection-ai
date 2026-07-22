@@ -233,16 +233,20 @@ st.subheader("📷 Kamera Live")
 st.info("Klik START lalu izinkan akses kamera.")
 
 webrtc_streamer(
-    key="gender-camera",
+    key="gender-detection",
     video_processor_factory=VideoProcessor,
-    media_stream_constraints={
-        "video": {
-            "width": {"ideal": 1280},
-            "height": {"ideal": 720},
-            "frameRate": {"ideal": 30},
-        },
-        "audio": False,
+    rtc_configuration={
+        "iceServers": [
+            {
+                "urls": [
+                    "stun:stun.l.google.com:19302"
+                ]
+            }
+        ]
     },
-    async_processing=True,
+    media_stream_constraints={
+        "video": True,
+        "audio": False
+    }
 )
 
